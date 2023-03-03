@@ -21,3 +21,19 @@ TEST_CASE("Count Prime in range")
 {
   CHECK(countPrimes(2,8) == 6);
 }
+
+TEST_CASE("Is a twin prime")
+{
+  CHECK(isTwinPrime(14) == false);
+   CHECK(isTwinPrime(29) == true);
+}
+
+TEST_CASE("Next twin prime")
+{
+  CHECK(nextTwinPrime(13) == 17);
+
+}
+
+TEST_CASE("Largest twin prime in range") {
+	CHECK(largestTwinPrime(5, 18) == 17);
+  }
